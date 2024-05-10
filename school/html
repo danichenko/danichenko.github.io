@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website Title</title>
+    <title>Shawarma</title>
     <style>
-        /* Set a base font for the entire page */
         body {
             font-family: 'Courier New', Courier, monospace;
             margin: 0;
@@ -36,28 +35,28 @@
         }
         main {
             padding: 20px;
-            width: 80%; /* Adjust the width of the main content area */
-            text-align: center; /* Center text in the main area */
+            width: 80%; 
+            text-align: center; 
         }
         img {
-            max-width: 100%; /* Ensure the image is responsive */
+            max-width: 100%; 
             height: auto;
         }
         footer {
-            margin-top: auto; /* Pushes the footer to the bottom */
+            margin-top: auto; 
         }
         .order-button {
-            background-color: #4CAF50; /* Green background */
-            color: white; /* White text */
-            padding: 15px 32px; /* Padding inside the button */
-            text-align: center; /* Center text inside the button */
-            text-decoration: none; /* Remove underline from links */
-            display: inline-block; /* Allows setting dimensions */
-            font-size: 16px; /* Larger font size */
-            margin: 10px 2px; /* Some margin around the button */
-            cursor: pointer; /* Cursor appears clickable */
-            border: none; /* Remove borders */
-            border-radius: 5px; /* Rounded corners */
+            background-color: #4CAF50; 
+            color: white; 
+            padding: 15px 32px; 
+            text-align: center; 
+            text-decoration: none; 
+            display: inline-block; 
+            font-size: 16px; 
+            margin: 10px 2px; 
+            cursor: pointer; 
+            border: none; 
+            border-radius: 5px; 
         }
     </style>
 </head>
@@ -66,7 +65,7 @@
         <h1>SHAWARMA</h1>
     </header>
     <nav>
-        <a href="#home">GYRO</a>
+        <a href="gyro.html">GYRO</a>
         <a href="#services">CHEBUREK</a>
         <a href="#about">CALZONE</a>
         <a href="#contact">Contact</a>
