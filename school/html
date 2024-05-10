@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+    <style>
+        /* Set a base font for the entire page */
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        header, footer {
+            background-color: #f1f1f1;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+        }
+        nav {
+            background: #333;
+            color: white;
+            padding: 15px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+            width: 80%; /* Adjust the width of the main content area */
+            text-align: center; /* Center text in the main area */
+        }
+        img {
+            max-width: 100%; /* Ensure the image is responsive */
+            height: auto;
+        }
+        footer {
+            margin-top: auto; /* Pushes the footer to the bottom */
+        }
+        .order-button {
+            background-color: #4CAF50; /* Green background */
+            color: white; /* White text */
+            padding: 15px 32px; /* Padding inside the button */
+            text-align: center; /* Center text inside the button */
+            text-decoration: none; /* Remove underline from links */
+            display: inline-block; /* Allows setting dimensions */
+            font-size: 16px; /* Larger font size */
+            margin: 10px 2px; /* Some margin around the button */
+            cursor: pointer; /* Cursor appears clickable */
+            border: none; /* Remove borders */
+            border-radius: 5px; /* Rounded corners */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SHAWARMA</h1>
+    </header>
+    <nav>
+        <a href="#home">GYRO</a>
+        <a href="#services">CHEBUREK</a>
+        <a href="#about">CALZONE</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <main>
+        <h2>Shawarma</h2>
+        <img src="shawarma.jpeg">
+        <p>Embark on a culinary journey with every bite of shawarma, where succulent slices of marinated meat spin in a mesmerizing dance, roasting slowly to perfection. Wrapped lovingly in a soft, warm pita, each shawarma is a masterpiece of textures and flavors. Aromatic spices mingle with fresh, crisp vegetables and a drizzle of creamy tahini or garlic sauce, creating a harmony that tantalizes the taste buds. Shawarma isn't just a meal; it's an experience—a deliciously crafted delight that promises satisfaction in every bite. Whether enjoyed on a busy street corner or at a family gathering, shawarma wraps you in a warm embrace of comforting, vibrant flavors that you will crave time and again.</p>
+        <button class="order-button">Order</button>
+    </main>
+    <footer>
+        <p>daniel</p>
+    </footer>
+</body>
+</html>
