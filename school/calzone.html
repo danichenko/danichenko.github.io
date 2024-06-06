@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calzone</title>
+    <style>
+        /* Set a base font for the entire page */
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        header, footer {
+            background-color: #f1f1f1;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+        }
+        nav {
+            background: #333;
+            color: white;
+            padding: 15px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+            width: 80%; /* Adjust the width of the main content area */
+            text-align: center; /* Center text in the main area */
+        }
+        img {
+            max-width: 100%; /* Ensure the image is responsive */
+            height: auto;
+        }
+        footer {
+            margin-top: auto; /* Pushes the footer to the bottom */
+        }
+        .order-button {
+            background-color: #4CAF50; /* Green background */
+            color: white; /* White text */
+            padding: 15px 32px; /* Padding inside the button */
+            text-align: center; /* Center text inside the button */
+            text-decoration: none; /* Remove underline from links */
+            display: inline-block; /* Allows setting dimensions */
+            font-size: 16px; /* Larger font size */
+            margin: 10px 2px; /* Some margin around the button */
+            cursor: pointer; /* Cursor appears clickable */
+            border: none; /* Remove borders */
+            border-radius: 5px; /* Rounded corners */
+        }
+        .order-button:hover {
+            background-color: red; /* Change color on hover */
+        }
+        #confirmation {
+            display: none;
+            font-size: 20px;
+            color: green;
+            margin-top: 20px;
+        }
+        .cart-section {
+            width: 80%;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .cart-items {
+            list-style-type: none;
+            padding: 0;
+        }
+        .cart-items li {
+            background-color: #f9f9f9;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .checkout-button {
+            background-color: #008CBA;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 20px 0;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+        .checkout-button:hover {
+            background-color: #005f73;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MEAT WRAPPERS</h1>
+    </header>
+    <nav>
+        <a href="shawarma.html">SHAWARMA</a>
+        <a href="cheburek.html">CHEBUREK</a>
+        <a href="gyro.html">GYRO</a>
+        <a href="calzone.html">CALZONE</a>
+    </nav>
+    <main>
+        <h2>Calzone</h2>
+        <img src="calzone.jpg" alt="Calzone">
+        <p>Imagine holding a freshly baked calzone, its golden-brown crust glistening with a light brush of olive oil and a sprinkle of garlic and herbs. As you cut into the crispy exterior, a cloud of fragrant steam escapes, revealing the mouthwatering filling inside. Each bite offers a delightful mix of gooey melted mozzarella, tangy marinara sauce, and savory chunks of pepperoni, sausage, and fresh vegetables. The cheese stretches with each pull, showcasing its perfect melt. Served on a rustic wooden board with a side of marinara sauce for dipping and garnished with fresh basil leaves, this calzone promises a rich, hearty, and utterly satisfying culinary experience. It's a perfect blend of flavors and textures that will leave you craving more with every bite.</p>
+        <button class="order-button" onclick="orderNow()">Order Now</button>
+        <button class="order-button" onclick="addToCart('Calzone')">Add to Cart</button>
+        <div id="confirmation">Thank you for your order!</div>
+    </main>
+    <section class="cart-section">
+        <h2>Shopping Cart</h2>
+        <ul class="cart-items" id="cart-items"></ul>
+        <button class="checkout-button" onclick="checkout()">Checkout</button>
+    </section>
+    <footer>
+        <p>Daniel</p>
+    </footer>
+    <script src="cart.js"></script>
+</body>
+</html>
